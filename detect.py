@@ -62,7 +62,7 @@ def constant_hazard(lam, r):
     return 1 / lam * np.ones(r.shape)
 
 
-class StudentTest:
+class StudentT:
     """
     Predictive distribution, using exponential statistical models.
     """
@@ -75,7 +75,7 @@ class StudentTest:
 
     def pdf(self, data):
         """
-        Student distribution
+        Student t distribution
         :param data: Input data, 1D array
         :return: Student distribution, 1D array
         """

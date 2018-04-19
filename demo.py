@@ -25,7 +25,7 @@ ind = (t_fs > t0) & (t_fs < t0 + 50)
 y, t = fs[ind], t_fs[ind]
 # %%
 R, maxes = det.detect(y, partial(det.constant_hazard, 250),
-                      det.StudentTest(0.1, 1., 1., 1.))
+                      det.StudentT(0.1, 1., 1., 1.))
 # %%
 Nw = 10
 fig, ax = plt.subplots(2, 1, sharex=True, figsize=(4, 5))
